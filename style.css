@@ -1,0 +1,571 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+header {
+    background-color: #f0f0f0;
+    width: 100%;
+    position: fixed;
+    /*3shen ma tru7 bs a3mol scroll*/
+    z-index: 999;
+    /*3shen bs a3ml scroll ma shi y8atiha tdal mbayne*/
+    display: flex;
+    justify-content: space-between;
+    /*by3ml space btwn elelments*/
+    align-items: center;
+    padding: 10px 200px;
+    background-color: #fff5ee;
+
+}
+.logo {
+    text-decoration: none;
+    color: #a0522d;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a {
+    color: #a0522d;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5em;
+    padding-left: 30px;
+    transition: 0.7s ease;
+}
+
+.navigation a:hover {
+    color: #2e8b2e;
+    font-size: 2em;
+    transform: scale(1.1);
+}
+section {
+    padding: 100px 200px;
+
+}
+
+.main {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: url(images/WhatsApp\ Image\ 2024-05-11\ at\ 01.26.37_cc1a8bae.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.main h2 {
+    color: white;
+    font-size: 1.4em;
+    font-weight: 500;
+    text-shadow: 2px 2px 5px black;
+
+}
+
+.main h2 span {
+    display: inline-block;
+    color: #a0522d;
+    font-size: 3em;
+    font-weight: 600;
+
+}
+
+.main h3 {
+    color: white;
+    font-size: 2em;
+    font-weight: 700;
+    text-shadow: 2px 2px 5px black;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.main-btn {
+    color: #fff;
+    background-color: #a0522d;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em 2.1875em;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    transition: 0.7s ease;
+    /*3shen lama yekbar yekbar shway shway*/
+}
+
+.main-btn:hover {
+    background-color: #808000;
+    transform: scale(1.1);
+    /*3shen tekbar*/
+
+
+}
+.title {
+    display: flex;/*hydol ltenen 3shen 7ot elkelme bel nos*/
+    justify-content: center;
+    color: #2e8b2e;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;/*3shen ykuno 7ad b3d*/
+    flex-wrap: wrap; /*hon 3shen ma tez8ar elcards w yenzalo t7t ba3ed*/
+}
+.card {
+    background-color: #fff;
+    width: 10.25em;
+    box-shadow: 0 5px 25px rgb(1 1 1/15%);
+    /*0:up or down 5:right if left:-5 25:blur rgb:color of the shadow*/
+    border-radius: 10px;
+    padding: 25px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.content a{
+    text-decoration: none;
+}
+.card:hover {
+    transform: scale(1.1);
+}
+
+.icon img {
+    color: #2e8b2e;   
+    text-align: center;
+    height: 100px;
+    width: 130px;
+    padding-right: 20px;
+}
+
+.info {
+    text-align: center;
+}
+
+.info h3 {
+    color: #2e8b2e;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.contents{
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.cards{
+    background-color: white;
+    width: 70%;
+    height: 150px;
+    margin-left: 150px;
+    box-shadow: 0 5px 25px rgb(1 1 1/15%);
+    transition: 0.7s ease;
+
+}
+.cards:hover {
+    transform: scale(1.1);
+}
+.contents .cards img{
+    float: left;
+    width: 20%;
+    height: 80%;
+    text-align: right;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+
+}
+.contents .cards .info2 p{
+    width: 80%;
+    height: 100%;
+    font-size: 15px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+        /*eza ken aktar mn satren y2oson*/
+    -webkit-box-orient: vertical;
+}
+.contents h3{
+    font-weight: 800;
+}
+.price{
+    color: #2e8b2e;
+    font-weight: 1000;
+    padding-left: 380px;
+    padding-top:50px;
+   
+    
+}
+.prices{
+    color: #2e8b2e;
+    font-weight: 800;
+    padding-top: 50px;
+}
+.footer {
+    background-color: #ffe4c4;
+    color: #a0522d;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-title {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.footer-title span {
+    color: #a0522d;
+}
+
+.footer .social-icons a {
+    font-size: 1.3em;
+    padding: 0 12px 0 0;
+    color: #a0522d;
+}
+.About{
+    background-color: #ffe4c4;
+    width: 60%;
+    height: 30%;
+    justify-content: center;
+    margin-left: 250px;
+    margin-top: 60px;
+    box-shadow: 0 5px 25px rgb(1 1 1/15%);
+    border-radius: 20px;
+}
+.Aboutt{
+    font-size: 1.8em;
+    font-weight: 800;
+    display: flex; /*hydol ltenen 3shen 7ot elkelme bel nos*/
+    justify-content: center;    
+}
+.Aboutp{
+    font-size: 1.5em;
+    padding-left: 0;
+    padding-right: 0;   
+}
+.review{
+    background-color: white;
+    width: 60%;
+    height: 30%;
+    justify-content: center;
+    margin-left: 250px;
+    margin-top: 60px;
+   
+    
+}
+.review h2{
+    font-size: 1.8em;
+    font-weight: 800;
+    display: flex; /*hydol ltenen 3shen 7ot elkelme bel nos*/
+    justify-content: center;
+
+}
+.form-container {
+    background-color: #ffe4c4;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.form-container h2 {
+    margin-top: 0;
+}
+
+.form-container label {
+    display: block;
+    margin: 10px 0 5px;
+}
+
+.form-container input[type="text"],
+.form-container textarea {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #cd853f;
+    border-radius: 10px;
+}
+
+.form-container button {
+    background-color: #a0522d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+h2 {
+    color: #333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #a0522d;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+th,td {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #a0522d;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #ffe4c4;
+}
+
+@media (max-width:1023px) {
+    header {
+        padding: 12px 20px;
+    }
+
+    .navigation a {
+        padding-left: 10px;
+    }
+
+    .title {
+        font-size: 1.8em;
+    }
+
+    section {
+        padding: 80px 20px;
+    }
+
+    .main-content h2 {
+        font-size: 1em;
+    }
+
+    .main-content h3 {
+        font-size: 1.6em;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width:641px) {
+    body {
+        font-size: 12px;
+    }
+
+    .main-content h2 {
+        font-size: 0.8em;
+    }
+
+    .main-content h3 {
+        font-size: 1.4em;
+    }
+    .contents p{
+        max-width: 100%;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+         /*eza ken aktar mn satren y2oson*/
+         -webkit-box-orient: vertical;
+    }
+    .main{
+        min-height: auto;
+        display: flex;
+         align-items: center;
+         width: 430px;
+    }
+   .logo {
+            font-weight: 700;
+            font-size: 1.0em;
+        }
+   .navigation a {
+         font-weight: 500;
+         font-size: 1.0em;
+         margin-left: 20px;
+                }
+    .content{
+        flex-direction: column;
+    }
+    section{
+       max-width: 430px;
+    }
+    .contents{
+        text-align: justify;
+    }
+    .center{
+        margin-right: 1000px;
+    }
+     header {
+            width: 430px;
+            display: flex;
+            justify-content: space-between;
+            /*by3ml space btwn elelments*/
+            align-items: center;
+            padding: 12px 20px;
+            background-color: #fff5ee;
+    
+        }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        font-size: 1em;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navigation a {
+        padding: 5px;
+        font-size: 0.9em;
+    }
+
+    .main h2 {
+        font-size: 0.7em;
+    }
+
+    .main h2 span {
+        font-size: 1.5em;
+    }
+
+    .main h3 {
+        font-size: 1em;
+    }
+
+    .main-btn {
+        font-size: 0.9em;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .title {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 50px 10px;
+    }
+
+    .About,
+    .review {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-title {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 300px) {
+    body {
+        font-size: 10px;
+    }
+
+    .logo {
+        font-size: 1em;
+    }
+
+    .navigation {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .navigation a {
+        font-size: 0.8em;
+        padding: 5px;
+    }
+
+    .main h2 {
+        font-size: 0.6em;
+    }
+
+    .main h2 span {
+        font-size: 1.2em;
+    }
+
+    .main h3 {
+        font-size: 0.9em;
+    }
+
+    .main-btn {
+        font-size: 0.8em;
+    }
+
+    .title {
+        font-size: 1em;
+    }
+
+    section {
+        padding: 40px 5px;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .About,
+    .review {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-title {
+        margin-bottom: 10px;
+    }
+}
